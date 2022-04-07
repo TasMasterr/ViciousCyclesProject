@@ -1,0 +1,202 @@
+body{
+    background-color: rgb(56, 0, 63);
+    margin: 0;
+}
+h1{
+    font-size: 3em;
+    text-align: center;
+    color: #ffae00;
+    font-family: Verdana;
+    margin-top: 1in;
+}
+h2{
+    text-align: center;
+    font-family: Verdana;
+    font-size: 15px;
+    color: aliceblue;
+}
+p{
+    text-align: center;
+    font-size: 25px;
+    padding: 5px;
+    font-family: Verdana;
+    color: aliceblue;
+    padding-right: 300px;
+    padding-left: 300px;
+}
+nav{
+    text-align: center;
+    background-color: #e09900;
+    font-size: 3em;
+    margin-top: 10px;
+    font-family: Verdana;
+    font-weight: bold;
+    padding-bottom: 18px;
+}
+a{
+    text-decoration: none;
+    padding: 8px;
+    color: aliceblue;
+    font-size: 20px;
+}
+label{
+    font-family: Verdana;
+    font-size: 20px;
+    margin: 8px;
+    color: aliceblue;
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+fieldset{
+    padding: 50px;
+    margin: 10%;
+}
+img[alt=FaceBookLogo]{
+    width: 50px;
+}
+img[alt=TwitterLogo]{
+    width: 50px;  
+}
+div[class=SocialMedia]{
+    text-align: center;
+}
+img[alt=ViciousCyclesLogo]{
+    width: 400px;
+    padding-top: 10px;
+}
+.front-page-image {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 15%; 
+    background-position: 0;
+}
+textarea[class=formReason]{
+    width: 100%;
+    padding-bottom: 50px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    padding: 20px 40px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 25px;
+    font-family: Verdana;
+    background-color: #e09900;
+}
+footer{
+    margin: 5%;
+}
+#products{
+    justify-items: center;
+    width: 100%;
+    margin-top: 80px;
+    display: grid;
+    grid-template-areas: 
+    "Product1 Product2 Product3";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px; 
+}
+#products > div:hover {
+  cursor: pointer;
+  background-color: rgb(145, 77, 0);
+}
+#products > div {
+    background-color: rgb(204, 133, 0);
+    padding: 10px 10px;
+}
+#products > div img {
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+}
+#products > div h3 {
+    padding-top: 5px;
+    font-family: Verdana;
+    text-align: center;
+    cursor:default;
+    color: aliceblue;
+}
+#products > div h4 {
+    padding-top: 5px;
+    font-family: Verdana;
+    text-align: center;
+    cursor:default;
+    color: aliceblue;
+}
+#Maintenance-Repairs{
+    justify-items: center;
+    width: 100%;
+    margin-top: 80px;
+    display: grid;
+    grid-template-areas: 
+    "repair-photo maintenance-photo";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px; 
+}
+#Maintenance-Repairs > div:hover {
+  cursor: pointer;
+  background-color: rgb(145, 77, 0);
+}
+#Maintenance-Repairs > div {
+    background-color: rgb(204, 133, 0);
+    padding: 10px 10px;
+}
+#Maintenance-Repairs > div img {
+    height: 450px;
+    width: 600px;
+    object-fit: cover;
+}
+#Maintenance-Repairs > div h3 {
+    padding-top: 5px;
+    font-family: Verdana;
+    text-align: center;
+    cursor:default;
+    color: aliceblue;
+}
+#Events{
+    justify-items: center;
+    width: 100%;
+    margin-top: 80px;
+    display: grid;
+    grid-template-areas: 
+    "event1 event2 event3";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px; 
+}
+#Events > div:hover {
+  cursor: pointer;
+  background-color: rgb(145, 77, 0);
+}
+#Events > div {
+    background-color: rgb(204, 133, 0);
+    padding: 10px 10px;
+}
+#Events > div img {
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+}
+#Events > div h3 {
+    padding-top: 5px;
+    font-family: Verdana;
+    text-align: center;
+    cursor:default;
+    color: aliceblue;
+}
