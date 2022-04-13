@@ -2,12 +2,13 @@ body{
     background-color: rgb(56, 0, 63);
     margin: 0;
 }
+/* - For Header Elements in the HTML Files - */
 h1{
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     color: #ffae00;
     font-family: Verdana;
-    margin-top: 1in;
+    margin-top: 1.5in;
 }
 h2{
     text-align: center;
@@ -15,36 +16,62 @@ h2{
     font-size: 15px;
     color: aliceblue;
 }
+/* - Table For Store Hours - */
+table {
+    text-align: left;
+    margin-left: auto; 
+    margin-right: auto;
+    font-family: Verdana;
+    font-size: 35px;
+    color: aliceblue;
+}
+td{
+    text-align: right;
+    margin-left: auto; 
+    margin-right: auto;
+    font-family: Verdana;
+    font-size: 35px;
+    color: aliceblue;
+}
+/* - For all Paragraph Elements in the HTML Files - */
 p{
     text-align: center;
     font-size: 25px;
-    padding: 5px;
+    padding: 15px;
     font-family: Verdana;
     color: aliceblue;
     padding-right: 300px;
     padding-left: 300px;
 }
-nav{
-    text-align: center;
+/* - For Navigation Bar - */
+nav ul{
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
     background-color: #e09900;
-    font-size: 3em;
-    margin-top: 10px;
     font-family: Verdana;
     font-weight: bold;
-    padding-bottom: 18px;
+    padding: 20px 20px;
+    margin: 0;
 }
-a{
+nav a{
     text-decoration: none;
-    padding: 8px;
+    padding: 12px;
     color: aliceblue;
     font-size: 20px;
 }
+nav a:hover{
+    background-color: rgb(194, 103, 0);
+    padding: 20px 20px;
+}
+/* - Reason Label for Contact Form - */
 label{
     font-family: Verdana;
     font-size: 20px;
     margin: 8px;
     color: aliceblue;
 }
+/* - Inquiry Textbox for Contact Form - */
 input[type=text]{
     width: 100%;
     padding: 10px 20px;
@@ -54,32 +81,7 @@ input[type=text]{
     border-radius: 5px;
     box-sizing: border-box;
 }
-fieldset{
-    padding: 50px;
-    margin: 10%;
-}
-img[alt=FaceBookLogo]{
-    width: 50px;
-}
-img[alt=TwitterLogo]{
-    width: 50px;  
-}
-div[class=SocialMedia]{
-    text-align: center;
-}
-img[alt=ViciousCyclesLogo]{
-    width: 400px;
-    padding-top: 10px;
-}
-.front-page-image {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 10%;
-    padding-bottom: 15%; 
-    background-position: 0;
-}
+/* - Inquiry Textbox for Contact Form - */
 textarea[class=formReason]{
     width: 100%;
     padding-bottom: 50px;
@@ -89,6 +91,12 @@ textarea[class=formReason]{
     border-radius: 8px;
     box-sizing: border-box;
 }
+/* - Contact Form Width - */
+fieldset{
+    padding: 20px;
+    margin: 15%;
+}
+/* - Contact Form Submit Button - */
 input[type=submit]{
     padding: 20px 40px;
     margin-right: auto;
@@ -100,22 +108,59 @@ input[type=submit]{
     font-family: Verdana;
     background-color: #e09900;
 }
-footer{
-    margin: 5%;
+/* - Images Customization - */
+img[alt=FaceBookLogo]{
+    width: 50px;
 }
+img[alt=TwitterLogo]{
+    width: 50px;  
+}
+div[class=SocialMedia]{
+    text-align: center;
+}
+img[alt=ViciousCyclesLogo]{
+    width: 400px;
+    padding: 15px 15px;
+    filter: brightness(1.5);
+}
+/* - Hero Image on the front of every page - */
+.front-page-image {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 15%; 
+    background-position: 0;
+}
+/* - For Footer Properties - */
+footer{
+    margin: 0%;
+    margin-top: 6%;
+    background-color: rgb(39, 0, 44);
+    padding: 20px 20px;
+}
+footer img[alt=ViciousCyclesLogo]{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+/* - For interactivity on Products Cards - */
 #products{
     justify-items: center;
     width: 100%;
-    margin-top: 80px;
+    margin: 0%;
     display: grid;
-    grid-template-areas: 
-    "Product1 Product2 Product3";
+    grid-row-gap: 100px;
+    grid-template-areas:
+    "Product1 Product2 Product3"
+    "Product3 Product5 Product6";
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 20px; 
 }
 #products > div:hover {
   cursor: pointer;
-  background-color: rgb(145, 77, 0);
+  background-color: rgb(194, 103, 0);
 }
 #products > div {
     background-color: rgb(204, 133, 0);
@@ -140,6 +185,7 @@ footer{
     cursor:default;
     color: aliceblue;
 }
+/* - For interactivity on Services Cards - */
 #Maintenance-Repairs{
     justify-items: center;
     width: 100%;
@@ -152,7 +198,7 @@ footer{
 }
 #Maintenance-Repairs > div:hover {
   cursor: pointer;
-  background-color: rgb(145, 77, 0);
+  background-color: rgb(189, 123, 0);
 }
 #Maintenance-Repairs > div {
     background-color: rgb(204, 133, 0);
@@ -170,6 +216,7 @@ footer{
     cursor:default;
     color: aliceblue;
 }
+/* - For interactivity on Events Cards - */
 #Events{
     justify-items: center;
     width: 100%;
@@ -182,7 +229,7 @@ footer{
 }
 #Events > div:hover {
   cursor: pointer;
-  background-color: rgb(145, 77, 0);
+  background-color: rgb(189, 123, 0);
 }
 #Events > div {
     background-color: rgb(204, 133, 0);
